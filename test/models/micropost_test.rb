@@ -1,16 +1,16 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-
+  
   def setup
-    @user = Micropost.new(content: "Example User")
+    @Micropost = Micropost.new(content:"今日の投稿")
   end
 
-  test "should be valid" do
-    assert @user.valid?
+  test "投稿の存在性" do
+    
   end
-   test "should be invalid" do
-     @user.content = ""
-    assert_not @user.valid?
+    test "投稿の文字数制限(250)" do
+    
   end
+
 end
